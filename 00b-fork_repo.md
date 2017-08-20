@@ -68,5 +68,5 @@ Here's your first chance to practice this:
 
 My favoriute emoji is...  
 
-:heart_eyes:
+>> :heart_eyes:
 
