@@ -75,7 +75,8 @@ print("This file was created by Reshama")
 2.  Create a file called `vinegar.py` using **vim**, add a couple of lines of code, save and exit.
 3.  Create a file called `egg.py` using **emacs**, add a couple of lines of code, save and exit.
 
-Upload these 3 files to the [`editors`](editors/) folder.  
+Upload these 3 files to the [`editors`](editors/) folder.
+>> I've added these files to the editor folder
 
 ### Q2. Terminal Editor
 
