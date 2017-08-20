@@ -68,5 +68,5 @@ Here's your first chance to practice this:
 
 My favoriute emoji is...  
 
-:stuck_out_tongue_winking_eye:
+:heart_eyes:
 
