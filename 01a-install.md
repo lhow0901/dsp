@@ -48,7 +48,7 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> I installed Python 3 because it's the version I learned this summer and it was recommended.
+>> I installed Python 3 because it's the version I learned this summer and since it was recommended.
 
 ### Q2. Which Python Version Installed   
 
