@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
-I installed Python 3 because it's the version I learned this summer and it was recommended.
+>> I installed Python 3 because it's the version I learned this summer and it was recommended.
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-Type "python -V" into the terminal on a mac or "python" in the command line of a Windows computer and the version of Python installed will be returned.
+>> Type "python -V" into the terminal on a mac or "python" in the command line of a Windows computer and the version of Python installed will be returned.
 
  
 
