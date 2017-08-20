@@ -19,11 +19,18 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.) 
 
->>
-Command | Description
-------- | ----------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+>> Command | Description
+>> ------- | ----------
+>> pwd | Show current working directory path
+>> mkdir | Create a directory
+>> rmdir | Delete a directory
+>> | Create a file using the `touch` command
+>> rm | Delete a file
+>> mv oldfilename newfilename | Rename old file name to new file name
+>> ls -a | List hidden files
+>> cp | Copy a file from one directory to another
+>> find | Find a file
+>> hostname | Show my computer's network name
 
 ---
 
