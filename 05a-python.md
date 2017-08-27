@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> They are very different data structures, but their few similarities include the ability to index and slice using brackets to reference items within either, and the ability to list duplicate items within either. Lists and tuples are different in the following ways:
+>> They are both data structures with the ability to index and slice using brackets to reference items within either, and the ability to list duplicate items within either. Lists and tuples are different in the following ways:
 >> * Lists are mutable while objects within tuples are immutable
 >> * Lists can be and usually are sorted
 >> * Items within lists are not grouped while tuples consist of groups of items
@@ -26,7 +26,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> They are similar in that both contain collections of items separated by commas, and they are different in that lists can contain duplicate values while sets cannot. Sets are unique unordered collections of items. As example of a list would be a list of cities and an example of a tuple would be coordinates on an x,y plane. Sets perform much better for finding an element - they have an almost constant time to lookup elements while lists have a linear time to lookup elements.
+>> They are similar in that both contain collections of items separated by commas, and they are different in that lists can contain duplicate values while sets cannot. Sets are unique unordered collections of items. As example of a set would be users in group (like all the unique users in a LinkedIn college alumni group). An example of a list would be grades students received on a test. Sets perform much better for finding an element in a collection. They have an almost constant time to lookup elements while lists have a linear time to lookup elements.
 
 ---
 
@@ -34,7 +34,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> `lambda ` is like an inline function. It allows you to use a function while not naming or storing it. It's often used with `map` or other functions where you input a callback function. An example would be using the `lambda` function with the `sorted` method to iterate through a list of tuples and sort by the 2nd value in the tuple (for example a tuple that includes a user's first and last name sorted by the last name).
+>> `lambda ` is like an inline function. It allows you to use a function while not naming or storing it. It's often used with `map` or other functions where you input a callback function. An example would be passing the `lambda` function to the `sorted` method to iterate through a list of tuples that includes a user's first and last name to sort by the last name.
 
 ---
 
