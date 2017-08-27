@@ -13,7 +13,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
 >> They are very different data structures, but their few similarities include the ability to index and slice using brackets to reference items within either, and the ability to list duplicate items within either. Lists and tuples are different in the following ways:
-* Lists are mutable while objects within tuples are immutable
+>> * Lists are mutable while objects within tuples are immutable
 * Lists can be and usually are sorted
 * Items within lists are not grouped while tuples consist of groups of items
 * Lists consist of items within [ ] separated by commas while tuples consist of groups of items within ( ) separated by commas inside of [ ] separated by commas
