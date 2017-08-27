@@ -1,5 +1,5 @@
-# Based on materials copyright 2010 Google Inc.
-# Licensed under the Apache License, Version 2.0
+import sys
+import os
 
 
 def donuts(count):
@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+
+    if count >=10:
+        return("Number of donuts: " + "many")
+    else: return("Number of donuts: " + str(count))
 
 
 def both_ends(s):
@@ -37,7 +40,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+
+    if len(s) <2:
+        return str()
+    return(s[0:2] + s[-2] + s[-1])
 
 
 def fix_start(s):
@@ -56,7 +62,9 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+
+    s2 = s[1:]
+    return( s[0] + s2.replace(s[0], '*'))
 
 
 def mix_up(a, b):
@@ -74,7 +82,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return( b[0:2] + a[2:] + " " + a[0:2] + b[2:])
 
 
 def verbing(s):
@@ -91,7 +99,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) >= 3 and s[-3:] != "ing":
+        return(s + "ing")
+    elif len(s) >= 3 and s[-3:] == "ing":
+        return(s + "ly")
+    else:
+        return(s)
 
 
 def not_bad(s):
@@ -111,10 +124,13 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    n = s.find('not')
+    b = s.find('bad')
+    if b > n: return(s[0:n] + 'good' +s[b+3:])
+    else: return s
 
 
-def front_back(a, b):
+def front_back(s1, s2):
     """
     Consider dividing a string into two halves. If the length is even,
     the front and back halves are the same length. If the length is
@@ -130,4 +146,18 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(s1) %2 == 0:
+        s1fhalf = int(len(s1)/2)
+        s1bhalf = int(len(s1)/2)
+    else:
+        s1fhalf = int(len(s1)/2) + 1
+        s1bhalf = int(len(s1)/2) + 1
+
+    if len(s2) %2 == 0:
+        s2fhalf = int(len(s2)/2)
+        s2bhalf = int(len(s2)/2)
+    else:
+        s2fhalf = int(len(s2)/2) + 1
+        s2bhalf = int(len(s2)/2) + 1
+
+    return(s1[0:s1fhalf] + s2[0:s2fhalf] + s1[s1bhalf:] + s2[s2bhalf:])
