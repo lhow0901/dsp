@@ -18,6 +18,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 >> * Items within lists are not grouped while tuples consist of groups of items
 >> * Lists consist of items within [ ] separated by commas while tuples consist of groups of items within ( ) separated by commas inside of [ ] separated by commas
 >> * Lists usually consist of similar elements (for example, brands of shoes) while tuples are typically heterogeneous items
+>> Tuples will work as keys in dictionaries because dictionaries need to be able to map a key to its value by easily comparing keys. In other words, it needs to be hashable and Python lists are not hashable. Additionally, keys shouldn't be mutable and tuples are immutable while lists are mutable.
 
 ---
 
@@ -25,7 +26,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> They are similar in that both contain collections of items separated by commas, and they are different in that lists can contain duplicate values while sets cannot. Sets are unique unordered collections of items. As example of a list would be a list of cities and an example of a tuple would be coordinates on an x,y plane. Sets perform much better for finding an element - they have an almost constant time to lookup elements while lists have a linear time to lookup elements.
 
 ---
 
@@ -33,7 +34,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda ` is like an inline function. It allows you to use a function while not naming or storing it. It's often used with `map` or other functions where you input a callback function. An example would be using the `lambda` function with the sorted method to iterate through a list of tuples and sort by the 2nd value in the tuple (for example a tuple that includes a user's first and last name sorted by the last name).
 
 ---
 
