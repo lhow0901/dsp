@@ -1,13 +1,13 @@
-# Hint:  use Google to find python function
+import sys
+import os
+from datetime import datetime
 
-####a) 
-date_start = '01-02-2013'  
-date_stop = '07-28-2015'   
+def difference_in_days(date1, date2):
+    date1 = datetime.strptime(date1, "%m-%d-%Y")
+    date2 = datetime.strptime(date2, "%m-%d-%Y")
+    difference = date2 - date1
+    return(difference.days)
 
-####b)  
-date_start = '12312013'  
-date_stop = '05282015'  
-
-####c)  
-date_start = '15-Jan-1994'  
-date_stop = '14-Jul-2015'  
+start_date = sys.stdin.readline().strip()
+stop_date = sys.stdin.readline().strip()
+print(difference_in_days(start_date,stop_date))
