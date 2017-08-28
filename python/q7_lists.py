@@ -1,6 +1,10 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
+import sys
+import os
+import json
+from datetime import datetime
 
 def match_ends(words):
     """
@@ -15,7 +19,12 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    def match_ends(s):
+    count = 0
+    for i in s:
+        if len(i) >=2 and i[0] == i[-1]:
+            count = count +1
+    return(count)
 
 
 def front_x(words):
@@ -32,7 +41,15 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    def front_x(words):
+    list1 = list()
+    list2 = list()
+    for word in words:
+        if word.startswith('x'):
+            list1.append(word)
+        else:
+            list2.append(word)
+    return(sorted(list1) + sorted(list2))
 
 
 def sort_last(tuples):
@@ -49,7 +66,8 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    def sort_last(tuples):
+        return(sorted(tuples, key=lambda x: x[-1]))
 
 
 def remove_adjacent(nums):
@@ -68,7 +86,15 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    def remove_adjacent(nums):
+        nums2 = list()
+        nums2.append(nums[0])
+        cmp = nums[0]
+        for num in nums:
+            if num != cmp:
+                nums2.append(num)
+            cmp = num
+        return(nums2)
 
 
 def linear_merge(list1, list2):
@@ -85,4 +111,28 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    rdef linear_merge(list1, list2):
+    i = 0
+    j = 0
+    list3 = list()
+    while i < len(list1) and j < len(list2):
+        if list1[i] < list2[j]:
+            list3.append(list1[i])
+            i = i+1
+        elif list1[i] == list2[j]:
+            list3.append(list1[i])
+            list3.append(list2[j])
+            i = i+1
+            j = j+1
+        elif list2[j] < list1[i]:
+            list3.append(list2[j])
+            j = j+1
+    if i == len(list1):
+        while j < len(list2):
+            list3.append(list2[j])
+            j = j+1
+    else:
+        while i < len(list1):
+            list3.append(list1[i])
+            i = i+1
+    return(list3)
