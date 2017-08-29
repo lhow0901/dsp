@@ -44,8 +44,8 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehension is a way of transforming one list into a new list. It's similar to `map` and `filter` in that both allow you to interate through an old list, transform values, and filter conditionally beforing adding the updated, filtered values to a new list. List comprehensions are usually the default in Python and make it easier to understand what code is doing.
 
->> The following examples both square each value in the list if it's an even value and add to a new list.  
->> squared_evens = map(lambda n: n ** 2, filter(lambda n: n % 2 == 1, numbers))  
+>> The following examples both square each value in the list if it's an even value and add to a new list.    
+>> squared_evens = map(lambda n: n ** 2, filter(lambda n: n % 2 == 1, numbers))    
 >> squared_evens = [n ** 2 for n in numbers if n % 2 == 1]
 
 >> Dictionary and set comprehensions are very similar. Set comprehensions take the same format as list comprehensions, but with {} instead of brackets. The above exampleof squaring all values in the list would be: squared_evens = {n ** 2 for n in numbers}. Dictionary comprehensions take the following format {key: value for (key, value) in iterable}. You can use dictionary comprehensions with the zip method to convert two lists (keys and values) into a dictionary(d): { d = k:v for (k,v) in zip(keys, values)}
