@@ -1,17 +1,9 @@
 import sys
 import os
-import csv
 
-with open('faculty.csv') as f:
-    faculty = csv.reader(f, skipinitialspace=True)
-    next(faculty)
-    degrees = list()
-    for row in faculty:
-        degree = row[1]
-        degree = degree.replace(".","")
-        degrees.append(degree)
-    degrees = [i.split(' ') for i in degrees]
-    all_degrees = [i for sublist in degrees for i in sublist]
-    degree_count = {x:all_degrees.count(x) for x in all_degrees}
-    for i in sorted(degree_count.items(), key=lambda x: x[1], reverse=True):
-        print(i)
+def write_to_csv(list_of_emails):
+    list_of_emails = list(['bellamys@mail.med.upenn.edu', 'warren@upenn.edu', 'bryanma@upenn.edu'])
+    with open('emails.csv','w') as f:
+        f.write('email\n')
+        for email in list_of_emails:
+            f.write(email+"\n")
