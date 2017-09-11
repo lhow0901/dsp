@@ -34,12 +34,14 @@ The name is derived from the term "Panel data", an econometrics term for multidi
 >### Part 1:  Review Pandas Example
 Review the Jupyter Notebook [`1_pandas_jeopardy_example.ipynb`](python/pandas/1_pandas_jeopardy_example.ipynb) which uses the `jeopardy.csv` data.
 
+>> Done!
+
 >### Part 2:  Try Pandas 
 * Open the Jupyter Notebook [`2_pandas_olive_questions.ipynb`](python/pandas/2_pandas_olive_questions.ipynb) which uses the `olive.csv` data.
 * Make a copy of the notebook and name it `3_pandas_olive_answers_myname.ipynb`.  (Example:  my notebook would be called `3_pandas_olive_answers_reshama.ipynb`).
 * Update the header at the top by adding in your name and date.
 * Edit this notebook and complete the exercises.
-
+>> Done!
 ---
 
 ## Optional Pandas Topics:  To Explore Further
