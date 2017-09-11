@@ -22,12 +22,9 @@ def get_dict2():
         next(faculty)
         faculty_dict = dict()
         for row in faculty:
-            name = (row[0].split(' ')[0], row[0].split(' ')[-1])
+            name = tuple(row.split(' '))
             info = row[1:4]
-            if name not in faculty_dict:
-                faculty_dict[name] = [info]
-            else:
-                faculty_dict[name].append(info)
+            faculty_dict[name] = [info]
         print(faculty_dict)
 
 get_dict2()
