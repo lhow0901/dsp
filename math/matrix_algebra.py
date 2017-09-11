@@ -24,7 +24,7 @@ print("2.1) u - v = ", u - v)
 print("2.2) u + v = ", u + v)
 print("2.3) 6u = ", 6 * u)
 print("2.4) u . v = ", np.dot(u, v))
-print("2.5) ||u|| = ", abs(u), '\n')
+print("2.5) ||u|| = ", sum(x**2 for x in u) ** .5, '\n')
 
 print("Q3 Answers")
 try:
@@ -56,7 +56,7 @@ try:
 except:
     print("3.7) CB is not defined")
 try:
-    print("3.8) B^4 = ", '\n', B ** 4)
+    print("3.8) B^4 = ", '\n', np.linalg.matrix_power(B, 4))
 except:
     print("3.8) B^4 is not defined")
 try:
