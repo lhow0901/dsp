@@ -22,9 +22,9 @@ def get_dict2():
         next(faculty)
         faculty_dict = dict()
         for row in faculty:
-            name = tuple(row.split(' '))
+            name = tuple(row[0].split(' '))
             info = row[1:4]
-            faculty_dict[name] = [info]
+            faculty_dict[name] = info
         print(faculty_dict)
 
 get_dict2()
