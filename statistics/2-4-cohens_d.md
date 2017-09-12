@@ -13,4 +13,6 @@ Using the variable `totalwgt_lb`, investigate whether first babies are lighter o
 >> First babies sd =  1.42  
 >> Other babies sd =  1.39  
 >>
->> Cohen's d for firsts vs others =  -0.09
+>> Cohen's d for firsts vs others =  -0.09  
+
+>>![alt text](https://github.com/lhow0901/dsp/blob/master/statistics/first_others_totalwgt_live.eps "Birth Weight Histogram")
