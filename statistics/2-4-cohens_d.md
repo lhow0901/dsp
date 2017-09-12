@@ -3,13 +3,13 @@ Using the variable `totalwgt_lb`, investigate whether first babies are lighter o
 
 
 >> The following are the descriptive statistics I computed in my python file [2-4cohens_d.py](https://github.com/lhow0901/dsp/edit/master/statistics/2-4-cohens_d.py)
->> First babies n =  4413
+>> First babies n =  4413  
 >> Other babies n =  4735  
 >> 
->> First babies mean =  7.2  lbs
+>> First babies mean =  7.2  lbs  
 >> Other babies mean =  7.33  lbs  
 >> 
->> First babies sd =  1.42
+>> First babies sd =  1.42  
 >> Other babies sd =  1.39  
 >>
 >> Cohen's d for firsts vs others =  -0.09
