@@ -1,4 +1,4 @@
-### Thanks for Your Help!
+### Thanks for Your Help! Test
 
 Contributing is so kind of you. In ThinkStats2, all contributions, bug reports, bug
 fixes, documentation improvements, enhancements and ideas are welcome.
@@ -56,7 +56,7 @@ Extras that are helpful --
  - flake8 for styles checks. PEP8 styles are not strictly enforced,
    but flake8 can call point out style and formatting fixes that can
    enhance readability
-   
+
 ##### Run the tests
 
 Tests are automatically detected and run with nose. To run them, use
