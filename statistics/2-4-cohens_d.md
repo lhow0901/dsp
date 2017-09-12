@@ -17,4 +17,5 @@ Using the variable `totalwgt_lb`, investigate whether first babies are lighter o
 
 ![Histogram](/img/first_others_totalwgt_lbs_live.png "Histogram"){:class="img-responsive"}  
 
-![Histogram](/img/first_others_totalwgt_lbs_live.png)
+![Histogram](img/first_others_totalwgt_lbs_live.png)
+![fork](img/forking_repo.png)
