@@ -1,4 +1,4 @@
-### Thanks for Your Help! Test
+### Thanks for Your Help!
 
 Contributing is so kind of you. In ThinkStats2, all contributions, bug reports, bug
 fixes, documentation improvements, enhancements and ideas are welcome.
