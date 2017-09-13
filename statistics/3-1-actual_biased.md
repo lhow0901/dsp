@@ -2,6 +2,7 @@
 Use the NSFG respondent variable numkdhh to construct the actual distribution for the number of children under 18 in the respondents' households. Now compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household. Plot the actual and biased distributions, and compute their means.
 
 
+>> All of the below plots were created and means calculated using my python file found here [3-1-actual_biased.py](https://github.com/lhow0901/dsp/blob/master/statistics/3-1-actual_biased.py).
 >> Below is a histogram of the actual distribution for the number of children under 18 in the household for the 2002 female respondent data set.  
 
 ![Histogram](img/PMF_numkdhh.png)  
