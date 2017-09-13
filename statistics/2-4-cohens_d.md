@@ -18,4 +18,4 @@ Using the variable `totalwgt_lb`, investigate whether first babies are lighter o
 >>
 >>Although the means show that first babies in this data set tend to weigh slightly less than other babies, the Cohen's *d*  value tells us that the effect size is very small. Any absolute value under .2 is considered very small. This is very similar to our findings for pregnancy length, but reversed. In the previous example, first babies tended to have slightly *longer* pregnancy lengths.
 >>
->> As was the case with pregnancy lenghts, for all practical purposes, pregnant women would not experience any meaningful difference in the weight of their first babies compared with later ones.
+>> As was the case with pregnancy lenghts, for all practical purposes, pregnant women in this data set would not experience any meaningful difference in the weight of their first babies compared with later ones.
