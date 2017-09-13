@@ -2,7 +2,7 @@
 Using the variable `totalwgt_lb`, investigate whether first babies are lighter or heavier than others. Compute Cohen’s effect size to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
 
 
->> The following are the descriptive statistics I computed in this python file [2-4cohens_d.py](https://github.com/lhow0901/dsp/edit/master/statistics/2-4-cohens_d.py)  
+>> The following are the descriptive statistics I computed in this python file [2-4-cohens_d.py](https://github.com/lhow0901/dsp/edit/master/statistics/2-4-cohens_d.py)  
 >>
 >> First babies n =  4413  
 >> Other babies n =  4735  
